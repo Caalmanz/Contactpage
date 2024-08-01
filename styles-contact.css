@@ -53,17 +53,13 @@ html, body {
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	min-height: 100vh;
+	min-height: 150vh; 
 	min-width: 100vw;
 	background-image: url("images/nepal.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
-
-
-
-
 }
 
 .center {
@@ -188,10 +184,11 @@ p {
 	font-weight: bold;
 }
 
+
 nav {
   font-family: "Arvo", serif;
   font-size: 1.6em;
-  margin: 0 auto; /* add this line */
+  margin: 0 auto;
   padding: 0 20px;
   border: dashed white;
   border-width: 4px 0;
@@ -199,8 +196,8 @@ nav {
   margin-top: 1em;
   background-color: rgba(235, 84, 84, 0.938);
   display: flex;
-  justify-content: space-between;
-  max-width: 800px; /* add this line */
+  justify-content: center; /* center the nav items */
+  max-width: 800px;
 }
 
 nav ul {
@@ -208,7 +205,7 @@ nav ul {
   padding: 0;
   margin: 0;
   display: flex;
-  flex-wrap: wrap; /* add this line */
+  flex-wrap: wrap;
 }
 
 nav ul li {
