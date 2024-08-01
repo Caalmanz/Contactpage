@@ -189,17 +189,18 @@ p {
 nav {
 	font-family: "Arvo", serif;
 	font-size: 1.6em;
-	margin: 20px auto;
-	border: dashed white;
+	margin: 20px auto; 
 	border-width: 4px 0;
-	text-align: center; 
+	text-align: center;
 	margin-top: 1em;
-	background-color:rgba(235, 84, 84, 0.938);
+	background-color: rgba(235, 84, 84, 0.938);
 	display: flex;
-	justify-content: baseline;
-	width: 100vw; 
+	justify-content: center;
+	align-items: center; 
+	width: 100%;
 	box-sizing: border-box; 
 }
+
 
 nav ul {
 	list-style-type: none;
@@ -207,11 +208,12 @@ nav ul {
 	margin: 0;
 	display: flex;
 	justify-content: center;
+	flex-wrap: wrap; 
 }
 
 nav ul li {
 	display: inline-block;
-	margin-right: 80px;
+	margin-right: 20px;
 }
 
 nav ul li a {
@@ -330,11 +332,34 @@ nav ul li a:hover {
   }
 
 
-@media only screen and (max-width: 480px) {
+  @media only screen and (max-width: 480px) {
 	h1 {
 		font-size: 1em;
 	}
-	.red-panda-image{
-		position:static;
+
+	nav {
+		flex-direction: column; /* Stack items vertically */
+		padding: 10px; /* Adjust padding */
+	}
+
+	nav ul {
+		flex-direction: column; /* Stack menu items vertically */
+	}
+
+	nav ul li {
+		margin: 5px 0; /* Adjust margin between items */
+	}
+
+	nav ul li a {
+		font-size: 1em; /* Smaller font size */
+		padding: 10px; /* Adjust padding */
+	}
+
+	.nav-logo {
+		width: 25%; /* Adjust logo size */
+	}
+
+	.red-panda-image, .red-image {
+		position: static; /* Adjust image positioning */
 	}
 }
