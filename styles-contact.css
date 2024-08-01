@@ -24,9 +24,6 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
 	line-height: 1;
-	padding-top: 100px; 
-	margin: 0;
-	font-family: "Arvo", serif;
 }
 
 ol, ul {
@@ -56,17 +53,19 @@ html, body {
 	width: 100%;
 	padding: 0;
 	margin: 0;
-	min-height: 100vh; 
-	min-width: 100vw;
 	background-image: url("images/nepal.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-position: center;
+
+
+
+
 }
 
 .center {
-	position: relative; 
+	position: relative; /* add relative positioning */
 	width: 125%;
 	max-width: 800px;
 	padding: 2%;
@@ -75,8 +74,8 @@ html, body {
 	text-align: center;
 	border: 4px dashed white;
 	clear: both;
-	
-}
+	height: 1425px;
+  }
 
 
 #logo {
@@ -187,39 +186,41 @@ p {
 	font-weight: bold;
 }
 
-
 nav {
 	font-family: "Arvo", serif;
 	font-size: 1.6em;
-	width: 100%; /* Ensure full width */
-	position: relative; /* Normal flow */
-	top: 0; /* Align to the top */
-	left: 0; /* Align to the left */
-	padding: 10px 20px; /* Adjust padding */
-	margin: 0; /* No margin to avoid extra space */
-	box-sizing: border-box;
+	margin: 20px auto;
 	border: dashed white;
 	border-width: 4px 0;
-	background-color: rgba(235, 84, 84, 0.938);
+	text-align: center; 
+	margin-top: 1em;
+	background-color:rgba(235, 84, 84, 0.938);
 	display: flex;
-	justify-content: space-between; /* Adjust for full width */
-	align-items: center;
-	flex-wrap: wrap;
+	justify-content: baseline;
+	width: 100vw; 
+	box-sizing: border-box; 
 }
-  
-  nav ul {
+
+nav ul {
 	list-style-type: none;
 	padding: 0;
 	margin: 0;
 	display: flex;
-	flex-wrap: wrap;
 	justify-content: center;
-	width: 100%;
-  }
-  
-  nav ul li {
-	margin: 0 10px; 
-  }
+}
+
+nav ul li {
+	display: inline-block;
+	margin-right: 80px;
+}
+
+nav ul li a {
+	color: #fff;
+	text-decoration: none;
+	padding: 50px 15px 10px;
+	display: block;
+	font-size: 1.2em;
+}
 
 nav ul li a:hover {
 	background-color: rgba(230, 134, 134, 0.815);
@@ -330,32 +331,10 @@ nav ul li a:hover {
 
 
 @media only screen and (max-width: 480px) {
-  h1 {
-    font-size: 1.5em;
-  }
-
-  nav {
-    flex-direction: column; 
-  }
-
-  nav ul {
-    justify-content: center; 
-  }
-
-  nav ul li {
-    margin: 5px 0; 
-  }
-
-  .donation-link {
-    font-size: 1.4em;
-  }
-
-  .nav-logo {
-	width: 25%;
-  }
-
-  .Instagram, .Facebook, .Twitter, .Youtube {
-    font-size: 2em;
-    padding: 5px;
-  }
+	h1 {
+		font-size: 1em;
+	}
+	.red-panda-image{
+		position:static;
+	}
 }
