@@ -67,7 +67,7 @@ html, body {
 .center {
 	position: relative; /* add relative positioning */
 	width: 100%;
-	max-width: 700px;
+	max-width: 6500px;
 	padding: 2%;
 	margin: 0px auto;
 	background: rgba(235, 84, 84, 0.938);
