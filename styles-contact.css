@@ -24,7 +24,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
 	line-height: 1;
-	padding-top: 80px; 
+	padding-top: 100px; 
 	margin: 0;
 }
 
@@ -191,18 +191,18 @@ nav {
   font-family: "Arvo", serif;
   font-size: 1.6em;
   width: 100%; /* Ensure full width */
-  position: fixed; /* Fix to the top if desired */
+  position: fixed; /* Fix to the top */
   top: 0; /* Align to the top */
   left: 0; /* Align to the left */
   z-index: 1000; /* Ensure it stays above other content */
-  padding: 10px 20px; /* Adjust padding as needed */
+  padding: 10px 20px; /* Adjust padding */
   margin: 0; /* No margin to avoid extra space */
   box-sizing: border-box;
   border: dashed white;
   border-width: 4px 0;
   background-color: rgba(235, 84, 84, 0.938);
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between; /* Adjust for full width */
   align-items: center;
   flex-wrap: wrap;
 }
@@ -213,13 +213,12 @@ nav ul {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
-  width: 100%; /* Full width */
+  justify-content: center;
+  width: 100%;
 }
 
 nav ul li {
-  display: inline-block;
-  margin: 0 20px; /* Adjust margin for spacing */
+  margin: 0 10px; /* Adjust margin for spacing */
 }
 
 nav ul li a:hover {
