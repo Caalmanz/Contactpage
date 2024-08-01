@@ -75,9 +75,10 @@ html, body {
 	border: 4px dashed white;
 	clear: both;
 	height: 1450px;
-	overflow:hidden;
+	box-sizing: border-box;
+	min-height: 130vh;
+	overflow: auto;
   }
-
 
 #logo {
 	width: 15%;
