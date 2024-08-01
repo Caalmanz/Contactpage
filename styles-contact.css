@@ -345,4 +345,7 @@ nav ul li a:hover {
 	.red-panda-image{
 		position:static;
 	}
+	nav {
+	justify-content: center;
+	}
 }
