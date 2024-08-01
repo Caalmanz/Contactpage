@@ -23,7 +23,8 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-	line-height: 1;
+	margin: auto;
+	max-width: 100%;
 }
 
 ol, ul {
