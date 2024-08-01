@@ -65,8 +65,8 @@ html, body {
 }
 
 .center {
-	position: relative; /* add relative positioning */
-	width: 125%;
+	position: relative; 
+	width: 100%;
 	max-width: 800px;
 	padding: 2%;
 	margin: 0px auto;
@@ -74,7 +74,8 @@ html, body {
 	text-align: center;
 	border: 4px dashed white;
 	clear: both;
-	height: 1425px;
+	height: 1450px;
+	overflow:hidden;
   }
 
 
