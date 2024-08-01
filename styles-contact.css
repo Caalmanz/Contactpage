@@ -23,8 +23,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 body {
-	margin: auto;
-	max-width: 100%;
+	line-height: 1;
 }
 
 ol, ul {
@@ -194,6 +193,8 @@ nav {
 	background-color:rgba(235, 84, 84, 0.938);
 	display: flex;
 	justify-content: center;
+	width: 100vw; 
+	box-sizing: border-box; 
 }
 
 nav ul {
