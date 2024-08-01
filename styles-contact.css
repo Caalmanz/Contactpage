@@ -188,19 +188,20 @@ p {
 nav {
   font-family: "Arvo", serif;
   font-size: 1.6em;
-  width: 100vw;
+  width: 100%;
   left: 0;
-  position: absolute;
+  position: relative;
   z-index: 1;
-  padding: 0 20px;
+  padding: 10px 20px;
   box-sizing: border-box;
   border: dashed white;
   border-width: 4px 0;
   text-align: center;
-  margin-top: 1em;
   background-color: rgba(235, 84, 84, 0.938);
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap; /* Allow items to wrap on smaller screens */
 }
 
 nav ul {
@@ -209,13 +210,14 @@ nav ul {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
 }
 
 nav ul li {
   display: inline-block;
-  margin-right: 80px;
+  margin: 10px 20px; /* Adjust margin for better spacing */
 }
-
 nav ul li a {
 	color: #fff;
 	text-decoration: none;
@@ -334,15 +336,27 @@ nav ul li a:hover {
 
 @media only screen and (max-width: 480px) {
   h1 {
-    font-size: 1em;
+    font-size: 1.5em;
   }
+
   nav {
-    flex-direction: column; /* add this line */
+    flex-direction: column; 
   }
+
   nav ul {
-    flex-wrap: wrap;
+    justify-content: center; 
   }
+
   nav ul li {
-    margin-right: 20px;
+    margin: 5px 0; 
+  }
+
+  .donation-link {
+    font-size: 1.4em;
+  }
+
+  .Instagram, .Facebook, .Twitter, .Youtube {
+    font-size: 2em;
+    padding: 5px;
   }
 }
