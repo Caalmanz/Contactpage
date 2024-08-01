@@ -63,7 +63,7 @@ html, body {
 }
 
 .center {
-	position: relative; /* add relative positioning */
+	position: relative;
 	width: 125%;
 	max-width: 800px;
 	padding: 2%;
@@ -72,8 +72,8 @@ html, body {
 	text-align: center;
 	border: 4px dashed white;
 	clear: both;
-	height: 1425px;
-  }
+	overflow: auto;
+}
 
 
 #logo {
