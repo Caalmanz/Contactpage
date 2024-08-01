@@ -191,7 +191,7 @@ p {
 nav {
   font-family: "Arvo", serif;
   font-size: 1.6em;
-  margin: 0;
+  margin: 0 auto; /* add this line */
   padding: 0 20px;
   border: dashed white;
   border-width: 4px 0;
@@ -200,15 +200,15 @@ nav {
   background-color: rgba(235, 84, 84, 0.938);
   display: flex;
   justify-content: space-between;
-  width: 100vw;
+  max-width: 800px; /* add this line */
 }
 
 nav ul {
   list-style-type: none;
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   display: flex;
-  width: 100%;
+  flex-wrap: wrap; /* add this line */
 }
 
 nav ul li {
@@ -337,7 +337,7 @@ nav ul li a:hover {
     font-size: 1em;
   }
   nav {
-    justify-content: center;
+    flex-direction: column; /* add this line */
   }
   nav ul {
     flex-wrap: wrap;
